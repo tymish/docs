@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Tymish - Small Business Time Sheet Manager
 
-You can use the [editor on GitHub](https://github.com/tymish/tymish.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Track, approve and manage incoming timesheets from your employees and contractors.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In development...
 
-### Markdown
+### Tools
+* Visual Studio Code - https://code.visualstudio.com/Download
+* MySQL Workbench - https://dev.mysql.com/downloads/workbench/
+* Git - https://git-scm.com/downloads
+* Postman - https://www.getpostman.com/downloads/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Runtime Dependencies
+* MySQL Community Server - https://dev.mysql.com/downloads/mysql/
+* Node.js - https://nodejs.org/en/
+* .NET Core SDK - https://dotnet.microsoft.com/download
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tymish/tymish.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Setup Instructions
+1. Create a directory `Tymish`
+2. Clone the three repositories into the directory (angular-ui, api, azure-function-proxy)
+3. Setup MySQL Database - https://github.com/tymish/api/blob/master/timeish.sql
+4. Setup tymish/api
+5. Setup tymish/azure-function-proxy
+6. Setup tymish/angular-ui
