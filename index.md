@@ -18,7 +18,7 @@ In development...
 ### Setup Instructions
 1. Create a directory `Tymish`
 2. Clone the three repositories into the directory (angular-ui, api, azure-function-proxy)
-3. Setup MySQL Database - [MySQL data script](https://github.com/tymish/api/blob/master/timeish.sql)
+3. Setup MySQL Database - [MySQL data script](https://github.com/tymish/api/blob/master/src/timeish.sql)
 4. Setup [tymish/api](https://github.com/tymish/api)
 5. Setup [tymish/azure-function-proxy](https://github.com/tymish/azure-function-proxy)
 6. Setup [tymish/angular-ui](https://github.com/tymish/angular-ui)
