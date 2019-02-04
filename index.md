@@ -5,9 +5,13 @@ Track, approve and manage incoming timesheets from your employees and contractor
 In development...
 
 ### Runtime Dependencies
-* MySQL Server v8.0.* - [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
 * Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 * .NET Core SDK - [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
+* MySQL Server v8.0.* - [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/) 
+   * Requires [Python](https://www.python.org/downloads/)
+   * For Windows use the [MySQL Installer MSI](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+   * Install MySQL Server (Development Default)
+   * Install MySQL Workbench
 
 ### Tools
 * Visual Studio Code - [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
