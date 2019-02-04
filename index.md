@@ -20,8 +20,11 @@ In development...
 * Postman - [https://www.getpostman.com/downloads/](https://www.getpostman.com/downloads/)
 
 ### Setup Instructions
-1. Create a directory `Tymish`
-2. Clone the three repositories into the directory (angular-ui, api, azure-function-proxy)
+1. Create a directory/folder `Tymish`
+2. Clone the three repositories into the `Tymish` directory
+   * `git clone https://github.com/tymish/api`
+   * `git clone https://github.com/tymish/azure-function-proxy`
+   * `git clone https://github.com/tymish/angular-ui`
 3. Setup MySQL Database - [MySQL data script](https://github.com/tymish/api/blob/master/src/timeish.sql)
 4. Setup [tymish/api](https://github.com/tymish/api)
 5. Setup [tymish/azure-function-proxy](https://github.com/tymish/azure-function-proxy)
