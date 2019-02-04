@@ -9,6 +9,7 @@ In development...
 * .NET Core SDK - [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 * MySQL Server v8.0.* - [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/) 
    * May require [Python](https://www.python.org/downloads/) and [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework-runtime)
+   * If the install fails, try again and exclude "Server Data Files"
    * [Windows MySQL Installer MSI](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 
 ### Tools
