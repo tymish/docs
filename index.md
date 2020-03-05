@@ -7,7 +7,7 @@ Track, approve and manage time reports.
 ### Feature 1.X Time report management
 
 
-#### 1.1 - Add employee
+#### 1.1 - Add employee [🔗](/1-1-add-employee.md)
 ```
 A a studio manager,
 she wants to add a new employee.
