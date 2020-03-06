@@ -7,32 +7,38 @@ Track, approve and manage time reports.
 ### Feature 1.X Time report management
 
 
-#### 1.1 - Add employee [🔗](/1-1-add-employee.md)
-```
-A a studio manager,
-she wants to add a new employee.
-```
-
-#### 1.2 - Request time reports
-```
-A a studio manager,
-she wants to send out time reports for employees to submit.
-```
-
-#### 1.3 - View outstanding time reports
+#### 1.1 - Add employee [🔗](/user-story/1-1-add-employee.md)
 ```
 As a studio manager,
-she wants to view outstanding time reports and see their status.
+I want to add a new employee.
 ```
 
-#### 1.4 - Review and pay time report
+#### 1.2 - Request time reports [🔗](/user-story/1-2-request-time-reports.md)
+```
+As a studio manager,
+I want to send out time reports for employees to submit.
+```
+
+#### 1.3 - View outstanding time reports [🔗](/user-story/1-3-view-time-reports.md)
+```
+As a studio manager,
+I want to view outstanding time reports and see their status.
+```
+
+#### 1.4 - Submit time report [🔗](/user-story/1-4-submit-time-report.md)
+```
+As an employee,
+I want to submit my time sheet.
+```
+
+#### 1.5 - Pay time report [🔗](/user-story/1-5-pay-time-report.md)
 ```
 As the owner,
-she wants to review an employee's submitted time report and mark it as paid.
+I want to review an employee's submitted time report and mark it as paid.
 ```
 
-#### 1.5 - Manage employee
+#### 1.6 - Manage employee [🔗](/user-story/1-6-manage-employee.md)
 ```
-A a studio manager,
-she wants to see employee information, and their time sheets.
+As a studio manager,
+I want to see employee information, and their time sheets.
 ```
