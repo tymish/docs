@@ -1,7 +1,7 @@
-# Setting up AWS EC2 Ubuntu Server 18.04 for hosting Tymish Web Api
+# Setting up Ubuntu Server 18.04 for hosting Tymish Web Api
 
 ## Required software
-* dotnet core runtime
+* dotnet aspnetcore runtime
 * nginx web server
 * Certbot SSL tool
 * postgres database
@@ -16,6 +16,7 @@ sudo apt update
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install dotnet-runtime-3.1
+sudo apt install aspnetcore-runtime-3.1
 dotnet --info                       # verify install
 ```
 
@@ -46,7 +47,7 @@ sudo apt install certbot python-certbot-nginx
 ```bash
 sudo certbot --nginx
 ```
-
+`
 ### Renew SSL (Only do this if expired)
 ```bash
 certbot renew
@@ -62,7 +63,12 @@ psql --version  # verify install
 ```
 
 ### Restore Db
-// TODO What is the best way to do database deploys for schema changes?
+Run the psql `create-db.sql`
+```bash
+sudo -i -u postgres
+psql
+\l
+```
 
 ## Forward Nginx calls to Kestrel
 ### Modify `/etc/nginx/sites-available/default`
@@ -82,3 +88,8 @@ location / {
 ### Add Kestrel to `systemd` service manager
 follow the link...
 https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1
+
+
+## Server Details
+app lives: `/var/www/tymish-api`
+* `dotnet /var/www/tymish-api/WebApi.dll` to start Kestrel on the server
