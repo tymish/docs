@@ -63,11 +63,15 @@ psql --version  # verify install
 ```
 
 ### Restore Db
-Run the psql `create-db.sql`
+Put this script on the server `create-db.sql`
 ```bash
+psql -d Tymish -f create-db.sql
 sudo -i -u postgres
 psql
-\l
+\l      # verify
+```
+### Create a db user that EF Core connection string will use
+```bash
 ```
 
 ## Forward Nginx calls to Kestrel
@@ -93,3 +97,39 @@ https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=as
 ## Server Details
 app lives: `/var/www/tymish-api`
 * `dotnet /var/www/tymish-api/WebApi.dll` to start Kestrel on the server
+
+### Add additional SSH public keys to server
+1. Create the public key with `ssh-keygen` 
+2. Add the public key to new line in `~/.ssh/authorized_keys`
+3. Use the private key to ssh in.
+
+### Add the Kestrel service to systemd
+Named: `/etc/systemd/system/keystrel-tymish-api.service`
+```
+[Unit]
+Description=Tymish API running on .NET Core Kestrel
+
+[Service]
+WorkingDirectory=/var/www/tymish-api
+ExecStart=/usr/bin/dotnet /var/www/tymish-api/WebApi.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-tymish-api
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+# Secret environment
+Environment=ConnectionStrings__TymishContext=""
+Environment=ApiKeys__SendGrid=""
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Enable the service
+```bash
+sudo systemctl enable kestrel-tymish-api.service
+```
