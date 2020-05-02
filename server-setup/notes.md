@@ -104,7 +104,7 @@ app lives: `/var/www/tymish-api`
 3. Use the private key to ssh in.
 
 ### Add the Kestrel service to systemd
-Named: `/etc/systemd/system/keystrel-tymish-api.service`
+Named: `/etc/systemd/system/kestrel-tymish-api.service`
 ```
 [Unit]
 Description=Tymish API running on .NET Core Kestrel
