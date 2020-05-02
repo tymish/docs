@@ -65,8 +65,14 @@ psql --version  # verify install
 ### Restore Db
 Put this script on the server `create-db.sql`
 ```bash
+scp -i ~/.ssh/<private-key> /path/to/create-db.sql <user>@<server>:/path/to/dest
+```
+Run the script
+```bash
+sudo -i -u postgres 
+dropdb Tymish
+createdb Tymish
 psql -d Tymish -f create-db.sql
-sudo -i -u postgres
 psql
 \l      # verify
 ```
