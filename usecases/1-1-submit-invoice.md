@@ -3,16 +3,23 @@
 As a vendor,
 I want to submit my invoice.
 ```
-## Use Cases
-### Primary Flow
+
+## Pre-condition
+* [0.0 Login](/0-0-login.md)
+
+## Primary Flow
 ```
-Given a url with the time report id
-   https://tymish.com/submit-time-report/66096e79-91de-48e5-a8b3-7652845c6ae1
+Given
+  the vendor is logged in [0.0 Login]
 
-when an employee navigates to the url in a browser
-   the system loads the time report for the employee.
+when
+  the vendor creates a new invoice
+  fills in the details,
+  and submits
 
-Then, when the employee submits their time entries for the month,
-   the system saves their time report
-   and notifies the employee that their time report has been submitted.
+then
+  the system saves the invoice,
+  marks it as submitted,
+  notifies the owner,
+  and notifies the vendor
 ```

@@ -4,10 +4,10 @@ As a vendor,
 I want to complete my registration for an account.
 ```
 
-### Pre-condition
+## Pre-condition
 * [2.0 Add vendor](/2-0-add-vendor.md)
 
-### Primary Flow
+## Primary Flow
 ```
 Given
   a url to register an account
@@ -15,10 +15,15 @@ Given
 
 when
   the vendor navigates to the url in a browser
-  the system loads a registration form.
+  
+then
+  the system loads a registration form
 
-then, when
-  the vendor submits the form,
+when
+  the vendor fills
+  and submits the form
+
+then
   the system completes their registration
-    and notifies the vedor.
+  and notifies the vendor.
 ```
