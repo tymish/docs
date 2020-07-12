@@ -1,8 +1,7 @@
-# 1.4 Submit Time Report 
-
+# 1.1 (Vendor) Submit invoice
 ```
-As an employee,
-I want to submit my time sheet.
+As a vendor,
+I want to submit my invoice.
 ```
 ## Use Cases
 ### Primary Flow

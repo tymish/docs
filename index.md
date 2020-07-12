@@ -1,44 +1,27 @@
 # Tymish
 
-Track, approve and manage time reports.
+Track, approve and manage invoices.
 
-## User Stories
+## Definition of Terms
 
-### Feature 1.X Time report management
+**Invoice** - a record of services and their duration for financial compensation
+**Vendor** - Person or company that provides services to the studio. e.g. Dance Teacher, Photographer, etc.
 
+## User Cases
 
-#### 1.1 - Add employee [🔗](/user-story/1-1-add-employee.md)
-```
-As a studio manager,
-I want to add a new employee.
-```
+### Technical
+* [0.0 - login](/usecases/0-0-login.md)
 
-#### 1.2 - Request time reports [🔗](/user-story/1-2-request-time-reports.md)
-```
-As a studio manager,
-I want to send out time reports for employees to submit.
-```
+### Vendors
+* [1.0 - Register](/usecases/1-0-register.md)
+* [1.1 - Submit invoice](/usecases/1-1-submit-invoice.md)
+* [1.2 - View invoices](/usecases/1-2-view-invoices.md)
 
-#### 1.3 - View outstanding time reports [🔗](/user-story/1-3-view-time-reports.md)
-```
-As a studio manager,
-I want to view outstanding time reports and see their status.
-```
+### Studio Manger
+* [2.0 - Add vendor](/usecases/2-1-add-vendor.md)
+* [2.1 - View vendors](/usecases/2-2-view-vendors.md)
+* [2.2 - View submitted invoices](/usecases/2-3-view-submitted-invoices.md)
 
-#### 1.4 - Submit time report [🔗](/user-story/1-4-submit-time-report.md)
-```
-As an employee,
-I want to submit my time sheet.
-```
-
-#### 1.5 - Pay time report [🔗](/user-story/1-5-pay-time-report.md)
-```
-As the owner,
-I want to review an employee's submitted time report and mark it as paid.
-```
-
-#### 1.6 - Manage employee [🔗](/user-story/1-6-manage-employee.md)
-```
-As a studio manager,
-I want to see employee information, and their time sheets.
-```
+### Owner
+* [3.0 - Pay invoice](usecases/3-1-pay-invoice.md)
+* [3.1 - View paid invoices](usecases/3.2-view-paid-invoices.md)

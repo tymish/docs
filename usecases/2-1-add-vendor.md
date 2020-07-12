@@ -1,7 +1,7 @@
-# 1.1 Add Employee User Story
+# 2.1 (Studio Manager) Add vendor
 ```
 As a studio manager,
-I want to add a new employee.
+I want to add a new vendor.
 ```
 
 ## Use Cases
