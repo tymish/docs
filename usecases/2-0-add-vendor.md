@@ -1,18 +1,22 @@
-# 2.1 (Studio Manager) Add vendor
+# 2.0 (Studio Manager) Add vendor
 ```
 As a studio manager,
 I want to add a new vendor.
 ```
 
-## Use Cases
+## Pre-condition
+* [0.0 Login](/0-0-login.md)
 
-### Primary Flow
+## Primary flow
 ```
-Given some employee information,
+Given
+  the studio manager is logged in [0.0 Login]
+  and has the email address of the new vendor
 
-when the user adds the employee to the system.
+when
+  the studio manager submits the new vendor email address
 
-The system notifies the user that the employee was added.
+then
+  the system sends a url to the new vendor
+  and notifies the studio manager that the url is sent.
 ```
-### Mock
-<iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Faox2oZDKJsgUAcMIElS2rg%2Fwire-frames%3Fnode-id%3D1%253A4" allowfullscreen></iframe>

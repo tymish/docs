@@ -7,7 +7,7 @@ I want to submit my invoice.
 ## Pre-condition
 * [0.0 Login](/0-0-login.md)
 
-## Primary Flow
+## Primary flow
 ```
 Given
   the vendor is logged in [0.0 Login]

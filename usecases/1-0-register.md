@@ -1,4 +1,4 @@
-# 1.1 (Vendor) Register
+# 1.0 (Vendor) Register
 ```
 As a vendor,
 I want to complete my registration for an account.
@@ -7,7 +7,7 @@ I want to complete my registration for an account.
 ## Pre-condition
 * [2.0 Add vendor](/2-0-add-vendor.md)
 
-## Primary Flow
+## Primary flow
 ```
 Given
   a url to register an account
