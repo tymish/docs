@@ -32,12 +32,16 @@ Track, approve and manage invoices.
 * [3.1 View paid invoices](usecases/3-1-view-paid-invoices.md)
 
 ## Api Endpoints
-* `POST /login` - [0.0 Login]
-* `GET /vendors` - [2.1 View vendors]
-* `GET /vendors/{id}/invoices` - [1.2 View invoices]
-* `POST /vendors` - [2.0 Add vendor]
-* `POST /vendor/{id}/register` - [1.0 Register]
-* `POST /vendors/{id}/invoices` - [1.1 Submit invoice]
+* `GET /invoices/{id}` - [1.2 View invoices], [3.0 Pay invoice]
 * `GET /invoices?status=submitted` - [2.2 View submimtted invoices]
 * `GET /invoices?status=paid` - [3.1 View paid invoices]
-* `POST /invoices/{id}/pay` - [3.0 Pay invoice]
+* `POST /invoices/submit` - [1.1 Submit invoice]
+* `POST /invoices/pay` - [3.0 Pay invoice]
+
+* `GET /vendors` - [2.1 View vendors]
+* `POST /vendors` - [2.0 Add vendor]
+* `GET /vendors/{id}/invoices` - [1.2 View invoices]
+* `POST /vendor/register` - [1.0 Register]
+
+* `POST /login` - [0.0 Login]
+
